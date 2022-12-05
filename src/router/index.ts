@@ -1,9 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '@/views/home-view.vue';
-import DashboardView from '@/views/dashboard-view.vue';
+import DashboardView from '@/views/dashboard/dashboard-view.vue';
 import WorkoutView from '@/views/workout/workout-view.vue';
 import ExerciseList from '@/views/exercise/exercise-list.vue';
-import ToDo from '@/views/to-do.vue';
+import ToDo from '@/views/todo/to-do.vue';
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
