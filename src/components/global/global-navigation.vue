@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <nav class="p-6 bg-gray-700 text-white flex justify-center items-center gap-10 text-lg tracking-widest">
+  <nav class="bg-gray-700 text-white p-6 tracking-widest text-ms md:text-lg flex flex-col md:flex-row justify-center md:items-center gap-3 md:gap-10 ">
     <RouterLink class="hover:cursor-pointer hover:underline"
                 :to="{ name: 'home' }" active-class="text-neon-green-default font-bold">Home</RouterLink>
 

@@ -15,6 +15,11 @@ export interface Image {
 
 export interface Video {
     id?: any;
-    src?: string;
+    url?: string;
     title?: string;
+}
+
+export interface GalleryData {
+    images?: Image[];
+    videos?: Video[];
 }
