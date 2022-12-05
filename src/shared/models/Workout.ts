@@ -29,5 +29,6 @@ enum WorkoutType {
     BICEPS = 'Biceps',
     Triceps = 'Triceps',
     ABS = 'Abs',
-    REST = 'Rest'
+    REST = 'Rest',
+    OTHER = 'Other'
 }
