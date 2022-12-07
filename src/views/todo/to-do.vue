@@ -3,6 +3,7 @@ import {ref} from 'vue';
 
 const gitHubRepo = ref('https://github.com/DWebdevV1/gym-workout-app');
 const jsonServerUrl = ref('https://github.com/typicode/json-server');
+const typeScriptLink = ref('https://vuejs.org/guide/typescript/composition-api.html#typing-reactive');
 </script>
 
 <template>
@@ -11,23 +12,36 @@ const jsonServerUrl = ref('https://github.com/typicode/json-server');
     <div class="flex-1 bg-gray-600 px-10 py-5 rounded-lg shadow-lg">
       <h2 class="text-2xl text-neon-green-default pb-5">TO-DOs Allgemein (Technologie)</h2>
       <ul class="list-disc">
+
+        <li class="text-lg py-2">TypeScript einsatz in der App überprüfen
+          (z.B. <a class="link" :href="typeScriptLink" target="_blank">{{ typeScriptLink }}</a>)
+        </li>
+
+        <li class="text-lg py-2">Icons einbinden & benutzen in App (Heroicons? Font Awesome Icons? Bootstrap 5 Icons?</li>
+
         <li class="text-lg py-2">GitHub Repo anlegen
           (<a class="link" :href="gitHubRepo" target="_blank">{{ gitHubRepo }}</a>)
         </li>
+
         <li class="text-lg py-2">Backend mit JSON Fake Server
           (<a class="link"
               :href="jsonServerUrl" target="_blank">{{ jsonServerUrl }}</a>)
         </li>
+
         <li class="text-lg py-2">Backend mit Node JS mit Express.js & MongoDB</li>
 
         <li class="text-lg py-2">Backend Authentifizierung (JWT)</li>
+
         <li class="text-lg py-2">REST API & Swagger</li>
+
         <li class="text-lg py-2">Documentation (Frontend & Backend)</li>
 
         <li class="text-lg py-2">Tests für die Component (Unit Test mit ViTest)</li>
+
         <li class="text-lg py-2">e2e Test mit Cypress</li>
 
         <li class="text-lg py-2">App hosten (Frontend & Backend)</li>
+
         <li class="text-lg py-2">Web App erstellen (Google Play Store / Androide Store)</li>
       </ul>
     </div>
@@ -39,7 +53,6 @@ const jsonServerUrl = ref('https://github.com/typicode/json-server');
         <li class="text-lg py-2">Trainingsplan suchen</li>
         <li class="text-lg py-2">Traingsplan bearbeiten</li>
         <li class="text-lg py-2">Zwischen Trainingsplänen wechseln (aktiven setzen)</li>
-
 
         <li class="text-lg py-2">Übungen erstellen (mit Beschreibung / Bild / Video)</li>
         <li class="text-lg py-2">Übungen einsehen</li>
@@ -54,9 +67,7 @@ const jsonServerUrl = ref('https://github.com/typicode/json-server');
         <li class="text-lg py-2">User Anmeldung</li>
 
         <li class="text-lg py-2">Trainingsplan exportieren / importieren</li>
-
         <li class="text-lg py-2">Trainingsplan / Übung teilen (social media)</li>
-
         <li class="text-lg py-2">(Leaderboard mit Erfolgen <br/>(Trainingsziele, Motivation, Ranking etc.))</li>
       </ul>
     </div>

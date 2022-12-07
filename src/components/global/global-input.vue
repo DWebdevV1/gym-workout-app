@@ -1,7 +1,7 @@
 <script setup lang="ts">
 
 const props = defineProps<{
-  modelValue: any,
+  modelValue: string,
   label: string,
   inputId: string,
   inputName: string,
@@ -15,7 +15,7 @@ const emit = defineEmits<{
   (e: 'update:modelValue', value: string): string
 }>();
 
-const onInput = (e: any) => emit('update:modelValue', e.target.value);
+const onInput = (e: Event) => emit('update:modelValue', (e.target as HTMLInputElement).value);
 
 </script>
 
