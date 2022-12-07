@@ -1,5 +1,5 @@
 export interface Exercise {
-    id?: any;
+    id?: number;
     title?: string;
     description?: string;
     banner?: string;
@@ -8,18 +8,13 @@ export interface Exercise {
 }
 
 export interface Image {
-    id?: any;
+    id?: number;
     src?: string;
     alt: string;
 }
 
 export interface Video {
-    id?: any;
+    id?: number;
     url?: string;
     title?: string;
-}
-
-export interface GalleryData {
-    images?: Image[];
-    videos?: Video[];
 }

@@ -8,7 +8,7 @@ import {useRouter} from 'vue-router';
 
 const router = useRouter();
 const showInputs = ref<boolean>(true);
-const exerciseData = reactive<Exercise>({
+const exerciseData: Exercise = reactive({
   title: '',
   description: '',
   banner: '',
