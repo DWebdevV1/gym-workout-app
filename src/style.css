@@ -23,8 +23,8 @@
 }
 
 @layer components {
-  .area {
-    @apply bg-gray-600 my-5 p-5 rounded-lg;
+  .card {
+    @apply bg-gray-600 p-5 border-t-2 border-neon-green-default;
   }
 
   .link {
@@ -49,6 +49,3 @@
 * {
   font-family: 'Montserrat', sans-serif;
 }
-
-
-
