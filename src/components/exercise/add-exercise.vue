@@ -32,14 +32,14 @@ const addNewExercise = () => {
 </script>
 
 <template>
-  <div class="area max-w-4xl">
+  <div class="area">
 
     <div class="flex items-center justify-between">
       <h1 class="text-neon-green-default">Add new Exercise</h1>
       <GlobalButton text="New Exercise" type="button" btn-cls="btn-primary" @click="toggleInputs"></GlobalButton>
     </div>
     <div v-if="showInputs" class="my-5 border-2 border-neon-green-default rounded-3xl p-5">
-      <form class="grid grid-cols-1 gap-6 p-2" @submit.prevent="addNewExercise">
+      <form class="grid grid-cols-1 gap-6 p-2 max-w-4xl" @submit.prevent="addNewExercise">
 
         <GlobalInput v-model="exerciseData.title"
                      label="Title"
