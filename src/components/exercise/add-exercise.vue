@@ -34,9 +34,9 @@ const addNewExercise = () => {
 <template>
   <div class="area">
 
-    <div class="flex items-center justify-between">
-      <h1 class="text-neon-green-default">Add new Exercise</h1>
-      <GlobalButton text="New Exercise" type="button" btn-cls="btn-primary" @click="toggleInputs"></GlobalButton>
+    <div class="flex flex-col items-center justify-between">
+      <h1 class="text-neon-green-default w-full">Add new Exercise</h1>
+      <GlobalButton text="New Exercise" type="button" btn-cls="w-full my-4" btn-type="btn-secondary" @click="toggleInputs"></GlobalButton>
     </div>
     <div v-if="showInputs" class="my-5 border-2 border-neon-green-default rounded-3xl p-5">
       <form class="grid grid-cols-1 gap-6 p-2 max-w-4xl" @submit.prevent="addNewExercise">
@@ -47,8 +47,9 @@ const addNewExercise = () => {
                      input-name="exercise_title"
                      type="text"
                      placeholder="Title"
-                     label-classes="flex-[20]"
-                     input-classes="flex-[70]">
+                     global-classes="flex flex-col gap-2"
+                     label-classes="w-full"
+                     input-classes="w-full">
         </GlobalInput>
 
         <GlobalInput v-model="exerciseData.description"
@@ -57,8 +58,9 @@ const addNewExercise = () => {
                      input-name="exercise_description"
                      type="text"
                      placeholder="Description"
-                     label-classes="flex-[20]"
-                     input-classes="flex-[70]">
+                     global-classes="flex flex-col gap-2"
+                     label-classes="w-full"
+                     input-classes="w-full">
         </GlobalInput>
 
         <GlobalInput v-model="exerciseData.banner"
@@ -67,11 +69,12 @@ const addNewExercise = () => {
                      input-name="exercise_banner"
                      type="text"
                      placeholder="Banner"
-                     label-classes="flex-[20]"
-                     input-classes="flex-[70]">
+                     global-classes="flex flex-col gap-2"
+                     label-classes="w-full"
+                     input-classes="w-full">
         </GlobalInput>
 
-        <GlobalButton text="Save Data" type="submit" btn-cls="btn-primary"></GlobalButton>
+        <GlobalButton text="Save Data" type="submit" btn-type="btn-primary"></GlobalButton>
 
       </form>
     </div>
