@@ -16,14 +16,19 @@ const exerciseData: Exercise = reactive({
 });
 
 //TODO Check for Validation of Data (Frontend & Backend)
+//TODO  replace with real validity check and notification later
 const addNewExercise = () => {
-  exerciseData.banner = 'https://via.placeholder.com/250';
+  if (exerciseData.title && exerciseData.description && exerciseData.banner) {
+    exerciseData.banner = 'https://via.placeholder.com/250';
 
-  exerciseService.addExercise(exerciseData)
-      .then(res => {
-        console.log('Exercise Data successfully added!', res);
-        router.go(0);
-      });
+    exerciseService.addExercise(exerciseData)
+        .then(res => {
+          console.log('Exercise Data successfully added!', res);
+          router.go(0);
+        });
+  } else {
+    console.log('No valid exercise Data');
+  }
 };
 
 </script>
