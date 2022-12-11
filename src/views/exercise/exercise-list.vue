@@ -1,9 +1,9 @@
 <script setup lang="ts">
   import {onMounted, ref} from 'vue';
+  import {Exercise} from '../../shared/models/Exercise';
   import apiService from '../../shared/services/exercise-service';
   import ExerciseItem from '../../components/exercise/exercise-item.vue';
   import AddExercise from '../../components/exercise/add-exercise.vue';
-  import {Exercise} from '../../shared/models/Exercise';
   import GlobalAccordion from '../../components/global/global-accordion.vue';
 
   let loading = ref<boolean>(false);
