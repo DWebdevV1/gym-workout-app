@@ -29,12 +29,12 @@
       <AddExercise></AddExercise>
     </template>
   </GlobalAccordion>
-  <template v-if="!loading && exerciseList.length > 0">
+  <div v-if="!loading && exerciseList.length > 0">
     <ExerciseItem v-for="exercise of exerciseList" :key="exercise.id" :exercise="exercise"></ExerciseItem>
-  </template>
-  <template v-else>
+  </div>
+  <div v-else>
     <p class="text-center text-sm text-neon-green-default">{{ errorMessage }}</p>
-  </template>
+  </div>
 </template>
 
 <style scoped>

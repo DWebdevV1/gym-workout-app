@@ -1,7 +1,9 @@
 import {Exercise} from './Exercise';
 
 export interface Workout {
-    units: WorkoutUnit[];
+    id?: number;
+    name?: string;
+    units?: WorkoutUnit[];
 }
 
 interface WorkoutUnit {
