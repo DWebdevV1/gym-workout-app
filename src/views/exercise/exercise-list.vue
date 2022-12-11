@@ -4,6 +4,7 @@
   import ExerciseItem from '../../components/exercise/exercise-item.vue';
   import AddExercise from '../../components/exercise/add-exercise.vue';
   import {Exercise} from '../../shared/models/Exercise';
+  import GlobalAccordion from '../../components/global/global-accordion.vue';
 
   let loading = ref<boolean>(false);
   let errorMessage = ref<string>('Loading data...');
@@ -23,7 +24,11 @@
 </script>
 
 <template>
-  <AddExercise></AddExercise>
+  <GlobalAccordion title="Add new Exercise">
+    <template v-slot:body>
+      <AddExercise></AddExercise>
+    </template>
+  </GlobalAccordion>
   <template v-if="!loading && exerciseList.length > 0">
     <ExerciseItem v-for="exercise of exerciseList" :key="exercise.id" :exercise="exercise"></ExerciseItem>
   </template>
