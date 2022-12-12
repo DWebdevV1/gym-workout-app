@@ -1,8 +1,8 @@
 import axios from 'axios';
 
 const GlobalService = axios.create({
-    baseURL: 'http://localhost:8080/',
-    headers: { 'Authorization': 'XXX_TOKEN' }
+    baseURL: import.meta.env.VITE_BACKEND_BASE_URL,
+    headers: { 'Authorization': import.meta.env.VITE_TOKEN_VALUE }
 });
 
 export default GlobalService

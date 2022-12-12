@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {reactive, ref} from 'vue';
+import {reactive} from 'vue';
 import {Exercise} from '../../shared/models/Exercise';
 import GlobalInput from '../global/global-input.vue';
 import GlobalButton from '../global/global-button.vue';

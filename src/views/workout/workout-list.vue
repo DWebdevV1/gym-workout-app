@@ -13,8 +13,7 @@ onMounted(async () => {
   } catch (e) {
     console.log(e);
   }
-})
-
+});
 </script>
 
 <template>
@@ -29,7 +28,10 @@ onMounted(async () => {
     <div v-for="workout of workoutListData">
       <GlobalAccordion>
         <template v-slot:header>
-          <h4 class="bg-neon-green-default text-black font-bold px-5 py-3">{{ workout.name }}</h4>
+          <h4 class="font-bold px-5 py-3 border-2 border-neon-green-default text-neon-green-default
+          hover:bg-neon-green-hover hover:text-black">
+            {{ workout.name }}
+          </h4>
         </template>
         <template v-slot:body>
           <WorkoutItem :workout="workout"></WorkoutItem>
