@@ -8,7 +8,8 @@ const props = defineProps<{
   type?: string,
   placeholder?: string
   labelClasses?: string,
-  inputClasses?: string
+  inputClasses?: string,
+  globalClasses?: string,
 }>();
 
 const emit = defineEmits<{
@@ -20,7 +21,7 @@ const onInput = (e: Event) => emit('update:modelValue', (e.target as HTMLInputEl
 </script>
 
 <template>
-  <div class="flex items-center gap-5 text-lg">
+  <div class="text-lg" :class="globalClasses">
     <label :class="labelClasses" for="id">{{ label }}</label>
     <input class="rounded-full px-5 py-2 border-none outline-none shadow-none text-black focus:ring-neon-green-default focus:ring-2"
            @input="onInput"
