@@ -8,8 +8,8 @@ class WorkoutService {
     }
 
     /** Add new Workout **/
-    addWorkout(exercise: Workout): Promise<Workout> {
-        return GlobalService.post('workouts', exercise).then(res => res.data);
+    addWorkout(payload: Workout): Promise<Workout> {
+        return GlobalService.post('workouts', payload).then(res => res.data);
     }
 }
 

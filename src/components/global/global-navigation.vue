@@ -25,6 +25,9 @@ const toggleNav = () => fullNav.value = !fullNav.value;
                 :to="{ name: 'exerciseList' }" active-class="font-bold">Exercise-List</RouterLink>
 
     <RouterLink class="text-black hover:cursor-pointer select-none hover:underline"
+                :to="{ name: 'blacklist' }" active-class="font-bold">Blacklist</RouterLink>
+
+    <RouterLink class="text-black hover:cursor-pointer select-none hover:underline"
                 :to="{ name: 'todo' }" active-class="font-bold">TO-DO</RouterLink>
   </nav>
 </template>

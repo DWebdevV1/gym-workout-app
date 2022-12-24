@@ -4,6 +4,7 @@ import DashboardView from '@/views/dashboard/dashboard-view.vue';
 import WorkoutList from '@/views/workout/workout-list.vue';
 import ExerciseList from '@/views/exercise/exercise-list.vue';
 import ToDo from '@/views/todo/to-do.vue';
+import BlacklistView from '../views/blacklist/blacklist-view.vue';
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -36,6 +37,11 @@ const router = createRouter({
             path: '/to-do',
             name: 'todo',
             component: ToDo
+        },
+        {
+            path: '/blacklist',
+            name: 'blacklist',
+            component: BlacklistView
         },
         /*    {
               path: '/about',

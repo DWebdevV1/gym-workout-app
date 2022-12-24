@@ -17,6 +17,8 @@ const typeScriptLink = ref('https://vuejs.org/guide/typescript/composition-api.h
           (z.B. <a class="link" :href="typeScriptLink" target="_blank">{{ typeScriptLink }}</a>)
         </li>
 
+        <li class="text-lg py-2">Abstände überarbeiten (gleiches Padding / Margin / Gap Abstände (Abstandssystem)</li>
+
         <li class="text-lg py-2">Icons einbinden & benutzen in App (Heroicons? Font Awesome Icons? Bootstrap 5 Icons?</li>
 
         <li class="text-lg py-2">GitHub Repo anlegen
